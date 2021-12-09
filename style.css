@@ -31,15 +31,42 @@
   /* size */
 
 }
-  /*  Universal tags */
-  *{
-      box-sizing: :border-box;
-  }
-
-
-
 body {
   font-family: "Open Sans", sans-serif;
 
+}
+
+  /*  Universal tags */
+  *{
+      box-sizing: :border-box;
+  }    
+
+/* Typography */  
+
+h1{
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--Color-Black);
+  margin: 16px 0px;
+}
+
+h2{
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  color: var(--Color-Black);
+  margin: 8px 0px;
+}
+h3{
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--Color-Black);
+  margin: 8px 0px;
+}
+
+p{
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--Color-Black);
+  margin: 4px 0px;
 }
 
