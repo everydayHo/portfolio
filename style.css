@@ -126,6 +126,14 @@ p {
   border-radius: var(--size-boder-radius);
 }
 
+.navbar_toggle-btn {
+  position: absolute;
+  display: none;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--Color-White);
+}
 /* Home */
 
 #home {
@@ -424,4 +432,40 @@ p {
 .contact_links i:hover {
   transform: scale(1.1);
   color: var(--Color-Pink);
+}
+
+/* For blow 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar_toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar_menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about_majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+  .project {
+    flex-grow: 1;
+  }
+  .testimonial_avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
