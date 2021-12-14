@@ -109,8 +109,9 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-beige);
-  padding: 6px;
+  padding: 16px;
 }
+
 .navbar_menu {
   display: flex;
 }
@@ -140,7 +141,7 @@ p {
 .navbar_toggle-btn {
   position: absolute;
   display: none;
-  top: 24px;
+  top: 16px;
   right: 32px;
   font-size: 24px;
   color: var(--Color-White);
@@ -374,7 +375,7 @@ p {
   transform: translateY(0px);
 }
 .project_description h3 {
-  color: var(--Color-dark-White);
+  color: var(--Color-Orange);
 }
 
 .project_description h3:after {
@@ -382,9 +383,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--Color-dark-White);
 }
@@ -487,6 +488,9 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+  .navbar_menu.active {
+    display: block;
   }
 
   .about_majors {
