@@ -324,6 +324,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+.work_projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -335,6 +341,9 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-beige);
+}
+.project.invisible {
+  display: none;
 }
 
 .project_img {
@@ -448,7 +457,7 @@ p {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  font-size: 50px;
+  font-size: 30px;
   color: var(--Color-White);
   background-color: var(--color-beige);
   border-radius: 50%;
