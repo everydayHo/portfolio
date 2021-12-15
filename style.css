@@ -125,14 +125,13 @@ p {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
-  border: 1px solid white;
   border-radius: var(--size-boder-radius);
 }
 
-/* .navbar_menu_item.active {
+.navbar_menu_item.active {
   border: 1px solid var(--Color-White);
   border-radius: var(--size-boder-radius);
-} */
+}
 
 .navbar_menu_item:hover {
   border-color: var(--Color-White);
@@ -185,7 +184,7 @@ p {
 /*   Section common*/
 
 .section {
-  padding: 50px;
+  padding: 75px;
   text-align: center;
   margin: auto;
 }
@@ -465,9 +464,10 @@ p {
 /* scroll */
 .arrow-up {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
-  font-size: 30px;
+  bottom: 45px;
+  right: 30px;
+  font-size: 60px;
+  line-height: 5px;
   color: var(--Color-White);
   background-color: var(--color-beige);
   border-radius: 50%;
